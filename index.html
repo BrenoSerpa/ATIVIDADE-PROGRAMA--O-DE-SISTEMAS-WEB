@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador Financeiro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icons8-money-box-30.png" sizes="30x30">
+</head>
+<body>
+    <header>
+        Organizador Financeiro Semanal
+    </header>
+    <main>
+        <section>          
+            <table id="main-table">
+                <tr>
+                    <th>Dia da Semana</th>
+                    <th>Gasto Diário (Em R$)</th>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr>
+                    <td>Segunda-Feira</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr>
+                    <td>Terça-Feira</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr>
+                    <td>Quarta-Feira</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr>
+                    <td>Quinta-Feira</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr>
+                    <td>Sexta-Feira</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>R$ 0,00</td>
+                </tr>
+            </table>
+            <table id="average-expending">
+                <tr>
+                    <td>Média dos gastos da semana (Em R$):</td>
+                    <td id="average-value">0,00</td>
+                </tr>
+            </table>
+            <div class="input-container">
+                <label for="dia">Selecione o dia:</label>
+                <select id="dia">
+                    <option value="Domingo">Domingo</option>
+                    <option value="Segunda-Feira">Segunda-Feira</option>
+                    <option value="Terça-Feira">Terça-Feira</option>
+                    <option value="Quarta-Feira">Quarta-Feira</option>
+                    <option value="Quinta-Feira">Quinta-Feira</option>
+                    <option value="Sexta-Feira">Sexta-Feira</option>
+                    <option value="Sábado">Sábado</option>
+                </select>
+                <label for="gasto">Gasto (R$):</label>
+                <input type="number" id="gasto" step="0.01" min="0" placeholder="Insira o valor">
+                <button onclick="atualizarGasto()">Atualizar Gasto</button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<!-- 
+1- Crie um programa em Javascript que permita ao usuário inserir seus gastos diários ao longo de uma 
+semana (7 dias). 
+
+2- O programa deve solicitar ao usuário que insira os gastos diários um por um, permitindo inserir 
+valores em reais (R$) para cada dia. 
+
+3- Após a inserção dos gastos de cada dia, o programa deve calcular e exibir o total gasto ao longo 
+da semana. 
+
+4- Além disso, o programa deve calcular e exibir a média diária de gastos. 
+
+5- Ao final da execução, o programa deve exibir uma mensagem amigável ao usuário, indicando o total 
+gasto e a média diária de gastos. 
+-->
